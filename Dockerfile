@@ -18,13 +18,7 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 RUN npm install -g npm
 
 # Copy in the repository we're working on
-WORKDIR /usr/local/hamsoft-svelte
-COPY . .
-
-# Project stuff
-RUN npm i
-# RUN npx playwright install
-# RUN npx playwright install-deps
-
+# WORKDIR /usr/local/hamsoft-svelte
+# COPY . .
 
 CMD ["zsh"]
