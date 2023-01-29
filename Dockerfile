@@ -18,6 +18,5 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 RUN npm install -g npm
 
 # Project setup
-RUN ./dev_init.sh
 
 CMD ["zsh"]
