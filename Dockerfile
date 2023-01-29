@@ -1,4 +1,4 @@
-FROM node:latest
+FROM denoland/deno:latest
 
 # Install gh CLI tool, so we can use this container to make pull requests
 RUN wget https://github.com/cli/cli/releases/download/v2.22.1/gh_2.22.1_linux_amd64.deb
