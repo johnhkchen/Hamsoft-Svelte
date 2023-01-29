@@ -5,10 +5,8 @@ RUN wget https://github.com/cli/cli/releases/download/v2.22.1/gh_2.22.1_linux_am
 RUN dpkg -i gh_2.22.1_linux_amd64.deb
 RUN rm gh_2.22.1_linux_amd64.deb
 
-
 # Updates
 RUN apt-get update
-RUN npm update
 
 # Install oh-my-zsh, a shiny terminal with autocomplete
 RUN apt-get install zsh -y
@@ -20,12 +18,11 @@ RUN sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master
 RUN npm install -g npm
 RUN npx playwright install
 RUN npx playwright install-deps
-# 
 
 # Copy in the repository we're working on
 WORKDIR /usr/local/hamsoft-svelte
 COPY . .
-RUN cd /opt && npm install
+RUN cd /hamsoft-svelte && npm install
 
 
 CMD ["zsh"]
