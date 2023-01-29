@@ -22,7 +22,7 @@ WORKDIR /usr/local/hamsoft-svelte
 COPY . .
 
 # Project stuff
-# RUN npm install
+RUN npm i
 # RUN npx playwright install
 # RUN npx playwright install-deps
 
