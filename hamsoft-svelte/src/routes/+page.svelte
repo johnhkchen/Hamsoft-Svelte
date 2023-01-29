@@ -1,2 +1,4 @@
-<h1>Welcome to Hamsoft-Svelte V0.1</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
+<h1>Hello Hamsoft-Svelte V0.0.1!</h1>
+<a href="/about">About my site</a>
+
+<a href="/blog/hello-world">Blog</a>
